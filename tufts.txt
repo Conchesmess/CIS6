@@ -1,0 +1,98 @@
+Do the first 10 projects from #1 below
+Do Line Following
+
+
+
+
+(1) Dr. E's Intro to Engineering Design with SPIKE Prime
+
+
+Here is the sequence of 10 projects I start my semester with.  You'll notice that the style of project is much more "engineering design" (and showcase based, emphasizing creativity and innovation) vs "follow the line" and a technical introduction to robotics.
+
+
+https://www.ceeoinnovations.org/RoboticsPlayground/playlists/dreplaylist.html
+
+
+(2) Machine Learning activities with SPIKE Prime
+
+
+I did four additional activities that aren't in as nice a format as the others:
+- High-or-Low (intro to supervised classification using 1-D data [distance sensor])
+- Fruit Scanner (3-dimensional color data [RGB] and doing supervised nearest-neighbor classification)
+- Smart Walkers (taking our classic Silly Walk activity and using reinforcement learning to train the robot to "walk straight")
+- 1D RL Search (needs a better/catchier name, but developing a Q-table of values for doing a 1D search)
+
+
+Some details on this page, although I'm not sure the code is 100% correct:
+- https://bit.ly/MLwithSPIKE (v2 workshop)
+
+
+Here is some documentation from my (college) class:
+- High or Low, Fruit Scanner, 1D RL Search
+
+
+(3) Some other ML/AI robotics activities
+
+
+Your mileage will vary (e.g. various quality here), but here are some other placemats related to ML/AI:
+
+
+- Intro to Machine Learning with SPIKE Prime
+- SPIKE Prime AI Puppy
+- Machine Learning Biomimicry Challenge
+- General overview of AI Algorithms
+
+
+(4) Using GenAI to program SPIKE Prime Robots
+
+
+Here is the site I showed you: https://coderobots.ai
+
+
+Sign in with Google (so it can track you), and you should be able to connect up to SPIKE Prime robots and send/execute code.  In the top right is the chat window, and you want to switch from the default "General Chat" to make a new chat with the "PrimeBot" to write SPIKE Prime specific code.  If you have questions or issues, let me know.  It's a student hacked-together project so definitely some bugs and little weird quirks that you have to work around to get a totally smooth experience, but it worked well in my class.
+
+
+(5) Generative Interactive Simulations for Teaching (GISTs)
+
+
+Playing around with this idea of how teachers can use Generative AI for making an interactive simulation for teaching a specific concept in a specific way to a specific population.  Here is the line follower example I showed you:
+
+
+https://claude.site/artifacts/4b5ca418-1fd5-4b13-9c5d-991d2b4b7ff6
+
+
+(6) When to use AI and when NOT to use AI
+
+
+Finally, this just came across my plate today, and relates to our conversation:
+- Ethan Mollick's 15 Times to use AI, and 5 Not to
+
+
+Specifically in the "not to" section about learning, these two stood out to me:
+
+
+When you need to learn and synthesize new ideas or information. Asking for a summary is not the same as reading for yourself. Asking AI to solve a problem for you is not an effective way to learn, even if it feels like it should be. To learn something new, you are going to have to do the reading and thinking yourself
+
+
+When the effort is the point. In many areas, people need to struggle with a topic to succeed - writers rewrite the same page, academics revisit a theory many times. By shortcutting that struggle, no matter how frustrating, you may lose the ability to reach the vital “aha” moment. 
+
+
+
+
+Thanks again for the call & chat.  Looking forward to staying connected.
+
+
+Best,
+Ethan.
+
+
+
+
+Ethan Danahy, PhD (he/him/his)
+Research Associate Professor
+Center for Engineering Education and Outreach (CEEO)
+Department of Computer Science
+Coordinator of SoE First-Year Courses
+Tufts University School of Engineering (SoE)
+Links: Email, Zoom, Profile, Calendar, Tufts CEEO
+
