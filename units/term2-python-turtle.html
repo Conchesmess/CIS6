@@ -34,32 +34,40 @@
 
       <h2>Lesson 2: The Turtle Screen</h2>
       <p>
-        In this lesson we will go over how to setup the screen where your turtle will draw.
+        Understanding the canvas before drawing on it. Concepts covered:
       </p>
       <ul>
-        <li><code>speed()</code> — sets how fast the turtle moves and draws. Values range from 1 (slowest) to 10 (fast), and 0 means fastest with no animation delay.</li>
-        <li><code>tracer()</code> — controls how often the screen updates. Use <code>tracer(0)</code> to turn off automatic updates so the turtle draws instantly behind the scenes. Call <code>screen.update()</code> when you're ready to show the result.</li>
+        <li><code>screen.setup(width, height)</code> — sets the window size in pixels.</li>
+        <li><strong>Coordinate system</strong> — (0, 0) is the center; x increases right, y increases up.</li>
+        <li><code>goto(x, y)</code> — moves the turtle directly to a coordinate.</li>
+        <li><code>penup()</code> / <code>pendown()</code> — lifts and lowers the pen so the turtle can move without drawing.</li>
+        <li><code>setheading(angle)</code> — points the turtle in a compass direction (0 = right, 90 = up, 180 = left, 270 = down).</li>
       </ul>
 
       <h2>Lesson 3: Loops</h2>
       <p>
-        Draw a square that is 255 pixels tall but do not draw the outline of the square.
-        Using a loop, draw a line that is 255 pixels, then move over one pixel and draw another
-        line right next to it and do that 255 times until you have a solid square.
+        Introduces <code>for</code> loops and <code>range()</code>. Students draw a solid 255×255 square by
+        looping 255 times, drawing one vertical line per iteration and stepping one pixel to the right each time.
+        <code>tracer(0)</code> and <code>screen.update()</code> are introduced to make the drawing appear instantly.
+      </p>
+      <p>
+        <em>Why draw 255 separate lines instead of using <code>begin_fill()</code>? Because each line can be a
+        different color — the payoff comes in Lesson 4.</em>
       </p>
 
       <h2>Lesson 4: Gradients</h2>
       <p>
-        Using the code from Lesson 3, create a separate variable for r, g, and b so that
-        r = 255, g = 255 and b = 0 (yellow). Set the color of the first line to rgb(r,g,b).
-        After you draw each line subtract 1 from the green value so that on the last line
-        r = 255, g = 0, b = 0 (red).
+        Introduces <strong>variables</strong> by giving the three color channels their own names:
+        <code>r = 255</code>, <code>g = 255</code>, <code>b = 0</code> (yellow).
+        Students call <code>pencolor(r, g, b)</code> inside the Lesson 3 loop and subtract 1 from <code>g</code>
+        each iteration so the color shifts from yellow to red across the square.
       </p>
 
       <h2>Lesson 5: Functions</h2>
+      <p>Introduces defining and calling functions with parameters, plus the <code>random</code> module.</p>
       <ol>
-        <li>Create a function named <code>bird</code> that takes a parameter, <code>radius</code>, that will make one bird from two arcs with a randomly chosen radius.</li>
-        <li>Create a second function called <code>birds</code> that takes a parameter of <code>num_birds</code> that will run a loop that contains two lines. The first line will move to a random location and the second line will run the function named <code>bird</code>. The loop will run <code>num_birds</code> times.</li>
+        <li>Write a function <code>bird(radius)</code> that draws one bird shape from two arcs using <code>turtle.circle()</code>.</li>
+        <li>Write a function <code>birds(num_birds)</code> that loops <code>num_birds</code> times, moving to a random location and calling <code>bird()</code> with a random radius each time.</li>
       </ol>
 
       <h2>Lesson 6: Draw a Sun</h2>
