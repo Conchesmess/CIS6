@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 7 Reference Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 11pt;
+      max-width: 720px;
+      margin: 40px auto;
+      color: #111;
+      line-height: 1.5;
+    }
+    h1 {
+      font-size: 18pt;
+      border-bottom: 2px solid #333;
+      padding-bottom: 6px;
+    }
+    h2 {
+      font-size: 13pt;
+      background-color: #e8e8e8;
+      padding: 4px 8px;
+      margin-top: 28px;
+      border-left: 4px solid #555;
+    }
+    p { margin: 6px 0 10px 0; }
+    pre {
+      background-color: #f4f4f4;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 10px 14px;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 10pt;
+      line-height: 1.6;
+      white-space: pre;
+    }
+    .comment { color: #777; }
+    ol { margin: 6px 0 10px 20px; }
+    li { margin-bottom: 4px; }
+    hr { border: none; border-top: 1px solid #ccc; margin: 24px 0; }
+  </style>
+</head>
+<body>
+
+<h1>Lesson 7 Reference Card</h1>
+<p>Use this alongside your <code>scene.py</code>. Each section shows the core pattern from that lesson — adapt the values for your own scene.</p>
+
+<hr>
+
+<h2>Starter code (already in scene.py)</h2>
+<pre>import turtle
+import random
+
+screen = turtle.Screen()
+screen.setup(600, 500)
+screen.title("My Scene")
+screen.colormode(255)
+screen.tracer(0)
+
+t = turtle.Turtle()
+t.speed(0)
+t.hideturtle()
+
+<span class="comment"># your code goes here</span>
+
+screen.update()
+screen.mainloop()</pre>
+
+<hr>
+
+<h2>L2 — Moving to a position</h2>
+<pre>t.penup()
+t.goto(x, y)       <span class="comment"># move without drawing</span>
+t.pendown()
+
+t.setheading(90)   <span class="comment"># 0 = right,  90 = up,  180 = left,  270 = down</span></pre>
+
+<hr>
+
+<h2>L3 — Solid block of color</h2>
+<pre>t.penup()
+t.goto(start_x, start_y)
+t.pendown()
+t.setheading(90)
+
+for i in range(255):
+    t.forward(255)
+    t.penup()
+    t.goto(t.xcor() + 1, start_y)
+    t.pendown()</pre>
+
+<hr>
+
+<h2>L4 — Gradient (yellow → red)</h2>
+<pre>r = 255
+g = 255
+b = 0
+
+t.penup()
+t.goto(start_x, start_y)
+t.pendown()
+t.setheading(90)
+
+for i in range(255):
+    t.pencolor(r, g, b)
+    t.forward(255)
+    t.penup()
+    t.goto(t.xcor() + 1, start_y)
+    t.pendown()
+    g -= 1</pre>
+
+<hr>
+
+<h2>L5 — Birds</h2>
+<pre>def bird(radius):
+    t.setheading(135)
+    t.circle(radius, 90)
+    t.setheading(135)
+    t.circle(radius, 90)
+
+def birds(num_birds):
+    for i in range(num_birds):
+        t.penup()
+        t.goto(random.randint(-300, 300), random.randint(-200, 200))
+        t.pendown()
+        bird(random.randint(20, 60))</pre>
+
+<hr>
+
+<h2>L6 — Sun</h2>
+<pre>SUN_X = 0
+SUN_Y = 250
+
+<span class="comment"># Rays — draw first so they appear behind the sun</span>
+t.penup()
+t.goto(SUN_X, SUN_Y)
+t.pendown()
+for angle in range(0, 360, 20):
+    t.setheading(angle)
+    t.forward(200)
+    t.backward(200)
+t.penup()
+
+<span class="comment"># Gradient sun — draw on top of rays</span>
+r = 255
+g = 255
+b = 0
+dot_size = 350
+
+t.goto(SUN_X, SUN_Y)
+for i in range(255):
+    t.dot(dot_size, (r, g, b))
+    dot_size -= 1
+    g -= 1</pre>
+
+<hr>
+
+<h2>Draw order — back to front</h2>
+<p>Things drawn <strong>first</strong> appear <strong>behind</strong> things drawn later. A typical order for a sky scene:</p>
+<ol>
+  <li>Gradient sky (background — draw first)</li>
+  <li>Sun rays</li>
+  <li>Sun gradient dots</li>
+  <li>Background elements (mountains, hills, clouds)</li>
+  <li>Birds</li>
+  <li>Foreground elements (grass, flowers, etc.)</li>
+</ol>
+
+</body>
+</html>

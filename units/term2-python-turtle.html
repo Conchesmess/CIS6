@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Term 2: Python Turtle | CIS6</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">CIS6 Curriculum Hub</div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../year-outline.html">Year Outline</a>
+      <a href="../syllabus.html">Syllabus</a>
+      <a href="../planning/resources.html">Resources</a>
+      <a href="../planning/roadmap.html">Roadmap</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content reveal">
+      <h1>Intro to Python using the Turtle</h1>
+
+      <h2>Lesson 1: Getting Started</h2>
+      <ol>
+        <li>Set up Visual Studio Code</li>
+        <li>Draw a red box filled with yellow</li>
+        <li>Draw a star outlined with the color rgb(255,255,0) and filled with rgb(0,255,255)</li>
+      </ol>
+
+      <h2>Lesson 2: The Turtle Screen</h2>
+      <p>
+        In this lesson we will go over how to setup the screen where your turtle will draw.
+      </p>
+      <ul>
+        <li><code>speed()</code> — sets how fast the turtle moves and draws. Values range from 1 (slowest) to 10 (fast), and 0 means fastest with no animation delay.</li>
+        <li><code>tracer()</code> — controls how often the screen updates. Use <code>tracer(0)</code> to turn off automatic updates so the turtle draws instantly behind the scenes. Call <code>screen.update()</code> when you're ready to show the result.</li>
+      </ul>
+
+      <h2>Lesson 3: Loops</h2>
+      <p>
+        Draw a square that is 255 pixels tall but do not draw the outline of the square.
+        Using a loop, draw a line that is 255 pixels, then move over one pixel and draw another
+        line right next to it and do that 255 times until you have a solid square.
+      </p>
+
+      <h2>Lesson 4: Gradients</h2>
+      <p>
+        Using the code from Lesson 3, create a separate variable for r, g, and b so that
+        r = 255, g = 255 and b = 0 (yellow). Set the color of the first line to rgb(r,g,b).
+        After you draw each line subtract 1 from the green value so that on the last line
+        r = 255, g = 0, b = 0 (red).
+      </p>
+
+      <h2>Lesson 5: Functions</h2>
+      <ol>
+        <li>Create a function named <code>bird</code> that takes a parameter, <code>radius</code>, that will make one bird from two arcs with a randomly chosen radius.</li>
+        <li>Create a second function called <code>birds</code> that takes a parameter of <code>num_birds</code> that will run a loop that contains two lines. The first line will move to a random location and the second line will run the function named <code>bird</code>. The loop will run <code>num_birds</code> times.</li>
+      </ol>
+
+      <h2>Lesson 6: Draw a Sun</h2>
+      <ol>
+        <li>Draw a dot so that half the dot extends off the top of the screen.</li>
+        <li><strong>Sun Rays:</strong> Starting at the middle of the sun dot, turn the turtle using <code>setheading(0)</code> and go forward then backwards. Then add some amount to the heading and go forward and back again. Do this as many times as needed to make rays coming out of the sun. Extra credit for changing colors.</li>
+        <li><strong>Gradient:</strong> Start by drawing a large dot then, in a loop, reduce the size of the dot and slightly change the color of the dot and draw the new dot on top of the last one.</li>
+      </ol>
+
+      <h2>Lesson 7: Draw a Scene</h2>
+      <p>
+        Combine ALL of the previous lessons (gradient background for a sky, birds, sun) and at least two other
+        elements (e.g., grass, flowers, clouds, etc).
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="../index.html">Back to Home</a></p>
+  </footer>
+
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

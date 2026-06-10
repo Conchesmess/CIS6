@@ -16,3 +16,15 @@ https://docs.google.com/presentation/d/1ClazsrAYYHD6r4-fTG1Wtpp696dcsPMrvqNfvBuC
 
 Lesson 5:
 https://docs.google.com/presentation/d/1dMD-aCHZvMbJ1ZXP_rWi25YMBcTtPaie2jKxo66LOSU/edit?usp=drive_link
+
+Lesson 6:
+Using Sensors
+https://docs.google.com/presentation/d/18bvVFhMl6s5gXtaQBaM9AdU3cpgPT_3b2eNEJVGSEXU/edit?slide=id.p#slide=id.p
+
+Lesson 7: 
+Build a car and make it move
+https://docs.google.com/presentation/d/13ibQ_N_-LfyCtqRl5bfSGNvNza2nGkzTikIMp_dkexY/edit?slide=id.g3eea7016267_0_12#slide=id.g3eea7016267_0_12
+
+Lesson 8:
+Speed vs. Accuracy
+https://docs.google.com/presentation/d/14lGX4_ybQkE3dySUEUAV1pNEX1Hu5mGDs3fkw2lOamY/edit?slide=id.g3ea97d626ba_0_5#slide=id.g3ea97d626ba_0_5

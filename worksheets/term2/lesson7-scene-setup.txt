@@ -1,0 +1,72 @@
+LESSON 7: Draw a Scene
+Setting Up Your Project in VS Code
+====================================
+
+STEP 1: Create a new folder for your project
+---------------------------------------------
+1. Open your file manager (Finder on Mac, File Explorer on Windows).
+2. Navigate to your Documents folder (or Desktop).
+3. Create a new folder and name it: lesson7-scene
+
+
+STEP 2: Open the folder in VS Code
+------------------------------------
+1. Open Visual Studio Code.
+2. From the menu bar choose: File > Open Folder...
+3. Navigate to the lesson7-scene folder you just created and click Open (or Select Folder).
+4. You should now see the lesson7-scene folder in the Explorer panel on the left.
+
+
+STEP 3: Create a new Python file
+----------------------------------
+1. In the Explorer panel, click the New File icon (it looks like a page with a +).
+2. Name the file:  scene.py
+3. Press Enter. The empty file will open in the editor.
+
+
+STEP 4: Paste the starter code
+--------------------------------
+Copy everything in the box below and paste it into scene.py:
+
+------------------------------------------------------------
+import turtle
+import random
+
+screen = turtle.Screen()
+screen.setup(600, 500)
+screen.title("My Scene")
+screen.colormode(255)
+screen.tracer(0)
+
+t = turtle.Turtle()
+t.speed(0)
+t.hideturtle()
+
+# ── Your code goes below this line ──────────────────────
+
+
+
+
+# ── End of your code ────────────────────────────────────
+screen.update()
+screen.mainloop()
+------------------------------------------------------------
+
+
+STEP 5: Run your file
+----------------------
+1. Press the Run button (triangle) in the top-right corner of VS Code,
+   OR open the Terminal (View > Terminal) and type:
+       python scene.py
+   then press Enter.
+2. A turtle window should open. Close it when you are done.
+
+
+REMINDER: What to include in your scene
+-----------------------------------------
+Your finished scene must combine ALL of the following:
+  - A gradient sky background (from Lesson 4)
+  - A sun with rays and gradient (from Lesson 6)
+  - Birds (from Lesson 5)
+  - At least TWO additional elements of your choice
+    (examples: grass, clouds, flowers, mountains, a house...)
